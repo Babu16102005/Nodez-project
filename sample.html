@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sample.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Upright:wght@300;400;500;600;700&family=Quicksand:wght@300..700&family=Style+Script&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Quicksand:wght@300..700&family=Style+Script&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div  class="title">
+        <h2>Notez...</h2>
+    </div>
+    <div class="container">
+        <div class="subtitle">
+            <h2>You can make notes of your Own</h2>
+            <h4>you can enter the reason of the notes</h4>
+            <p>enter your notes as paragragh</p>
+            <button class="del_btn" onclick="del(event)">Delete</button>
+        </div>
+    </div>  
+    
+    <div class="overlay"></div>
+    <center>
+    <div class="box">
+        <form class="form">
+            <h2>ADD NOTEZ...</h2>
+            <input type="text" placeholder="Enter the title of the note" class="in_1" id="input1">
+            <input type="text" placeholder="Enter the reason of the note" class="in_2" id="input2">
+            <textarea placeholder="Enter your note here" class="in_3" id="input3"></textarea>
+            <button class="submit" id="submit">Submit</button>
+            <button class="cancel" id="Cancel">Cancel</button>
+            
+        </form>
+    </div>
+    </center>
+
+    <button class="add" id="add" onclick="popup()"> + </button>
+    <script src="sample.js"></script>
+    
+</body>
+</html>
